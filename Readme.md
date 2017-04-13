@@ -2,6 +2,7 @@
 
 * Студент: [Наталья Волчатова](https://up.htmlacademy.ru/htmlcss/17/user/415439).
 * Наставник:  Николай Маркелов
+* Наставник: [Николай Маркелов] (https://github.com/nikolamarkelov).
 
 ---
 
