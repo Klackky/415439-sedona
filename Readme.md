@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Наталья Волчатова](https://up.htmlacademy.ru/htmlcss/17/user/415439).
-* Наставник: [Николай Маркелов] (https://github.com/nikolamarkelov).
+* Наставник: [Николай Маркелов](https://github.com/nikolamarkelov).
 
 ---
 
