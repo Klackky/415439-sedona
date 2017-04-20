@@ -1,0 +1,45 @@
+body {
+	font-family:"PT Sans";
+	line-height: 26px;
+}
+.main-navigator {
+	font-size: 14px;
+	font-weight: bold; 
+	text-transform: uppercase;
+	
+}
+li {
+	display: inline;
+}
+
+
+h1{
+	font-size:30px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 21px;
+	font-weight: bold; 
+	text-transform: uppercase; 
+}
+p{
+	font-size: 14px;
+	text-transform: uppercase;
+	text-weight: regular; 
+
+}
+
+legend {
+	font-size: 16px;
+	font-weight: bold; 
+	text-transform: uppercase; 
+	line-height: 21px;
+}
+
+.sort1 {
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase; 
+}

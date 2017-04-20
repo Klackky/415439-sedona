@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="css/css.css" rel="stylesheet">
 
   </head>
   <body>
@@ -15,35 +16,42 @@
 	     <li> <a href="#"> Гостиницы </a> </li>
 	  </ul>
 	</nav>  
-	  <div class="logo">
-	    <a href="#"> <img src="#" alt="main-page"> </a>
-	  </div>
+	<div class="logo">
+	 <a href="index.html"> <img src="img/logo-sedona.png" alt="logo" width="200" height="100"> </a> 
+	</div>
 	</header>  
-	
       <form>
 	  <fieldset class="search">
 	  <legend> Инфраструктура </legend>
+	   <p>
 	   <input type="checkbox" name="pool" id="pool">
-	   <label for="pool"> Бассейн </label>
-	   <br>
+	   <label for="pool">  Бассейн </label> 
+	   </p>
+	   <p>
 	   <input type="checkbox" name="parking" id="parking">
-	   <label for="parking"> Парковка </label>
-	   <br>
+	   <label for="parking">  Парковка  </label>
+	   </p>
+	   <p>
 	   <input type="checkbox" name="wifi" id="wifi">
-	   <label for="wifi"> WI-FI </label>
+	   <label for="wifi">  WI-FI  </label>
+	   </p>
 	   </fieldset>
 	   </form>
 	 <form>
 	 <fieldset class="search-2">
 	<legend> Тип жилья </legend>
+	 <p>
 	  <input type="checkbox" name="hotel" id="hotel">
 	  <label for="hotel"> Гостиница </label>
-	  <br>
+	 </p>
+	 <p>
 	  <input type="checkbox" name="motel" id="motel">
 	  <label for="motel"> Мотель </label>
-	  <br>
+	 </p>
+	 <p>
 	  <input type="checkbox" name="apartments" id="apartments">
 	  <label for="apartments"> Апартаменты </label>
+	 </p> 
 	  </fieldset>
 	 </form>
 	 <form action="#" method="post">
@@ -51,7 +59,6 @@
 	 <legend>Стоимость в сутки (Р):</legend>
 	   <div class="filter-start">
 	   <label for="price-start"> От </label>
-	  
 	   </div>
 	   <div class="filter-end">
 	   <label for="price-end"> До </label>
@@ -60,9 +67,10 @@
 	   </div>
 	 </fieldset>
 	 </form>
-	 <div class="results">
+	 <div class="sort">
 	 <h2> Найдено: 3 </h2>
-	 <p> Сортировка </p>
+	 <div class="sort1">
+	   <span> Сортировка </span>
 	  <ul>
 	    <li> <a href="#"> По цене </a> </li>
 	    <li> <a href="#"> По типу </a> </li>
@@ -71,34 +79,43 @@
 	 </div>
   <div class="results">
     <div class="hotel">
-     <img src="#" alt="amara hotel">
-     <h1> Amara Resort & Spa </h1>
+     <img src="img/amara.png" alt="amara hotel" width="135" height="90">
+     <h2> Amara Resort & Spa </h2>
      <p> Гостиница от 4000 Р. </p>
        <div class="booking">
          <a href="#" class="button"> Подробнее </a>	   
 		 <a href="#" class="button-2"> Забронировать </a>
-		  <div class="rating"> Рейтинг: 8,5 </div>
+		  <div class="rating"> 
+		   <p>Рейтинг: 8,5 </p>
+		  </div>
+		  <img src="img/4.png" alt="stars">
 		</div>
 		
 	<div class="motel">
-      <img src="#" alt="motel">
-      <h1> Desert Quail Inn </h1>	
+      <img src="img/desert.png" alt="motel" width="135" height="90">
+      <h2> Desert Quail Inn </h2>	
       <p> Мотель от 3000 Р.</p>	  
 	   <div class="booking">
 		<a href="#" class="button"> Подробнее </a>	   
 		<a href="#" class="button-2"> Забронировать </a>  
-		 <div class="rating"> Рейтинг: 8,9 </div>
+		 <div class="rating"> 
+		  <p>Рейтинг: 8,9 </p>
+		 </div>
+		 <img src="img/3.png" alt="3 stars">
 	   </div>
 	</div>
 	
 	<div class="apartments">
-	  <img src="#" alt="apartments">
-	  <h1> Villas At Poco Diablo </h1>
+	  <img src="img/villas.png" alt="apartments" width="135" height="90">
+	  <h2> Villas At Poco Diablo </h2>
 	  <p> Апартаменты от 2000 Р. </p>
 	   <div class="booking">
 		<a href="#" class="button"> Подробнее </a>	   
 		<a href="#" class="button-2"> Забронировать </a> 
-		<div class="rating"> Рейтинг 9,2 </div>
+		<div class="rating"> 
+		 <p>Рейтинг 9,2 </p>
+		</div>
+		<img src="img/2.png" alt="2 stars">
 	   </div>
 	</div>
    </div>
@@ -114,7 +131,8 @@
       <a class="social-btn social-btn-youtube" href="#">Youtube</a>
 	 </section> 
 	 <section class="copyright">
-	 <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="#" alt="htmlacademy logo"> </a>
+	<p> website by </p>
+	 <a href="https://htmlacademy.ru/intensive/htmlcss">  <img src="img/logo-htmlacademy.png" alt="htmlacademy logo" width="120" height="51"> </a>
 	 </section>
    </div>	 
 </footer>	 
