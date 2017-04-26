@@ -38,17 +38,11 @@ ul {
 }
 
 li {
-	display: inline-block;
     font-size: 14px;
+	display: inline-block; 
 }
-
-
 
 .nav-left{
-	width: 240px;
-	
-}
-.nav-left-2{
 	width: 240px;
 	padding:0;
 
@@ -60,7 +54,7 @@ li {
 
 }
 
-.nav-right-2{
+.nav-right-b{
 	padding:0;
 
 }
@@ -73,28 +67,21 @@ li {
 	margin-bottom:55px; 
 }
 
-.house {
-   float: left;
-   width: 256px;
-   min-height:194px; 
-   padding: 60px 74px 86px 70px; 
-   text-align: center; 
-   
+.features {
+	display:flex; 
+    flex-direction: row; 
+	justify-content: space-between; 
+    width:100%;  
 }
-.food{
-   float: left;
-   width: 283px;
-   min-height:194px; 
-   padding: 60px 57px 86px 60px; 
-   text-align: center; 
+
+
+.item {
+	width:33.333%;
+	min-height:182px; 
+    padding: 60px 57px 88px 60px; 
+    text-align: center; 
 }
-.souvenirs{
-   float: right; 
-   width: 271px;
-   min-height:194px; 
-   padding: 60px 63px 86px 66px; 
-   text-align: center; 
-}
+
 .reasons-text {
 	float:left; 
 	text-align: center; 
@@ -123,12 +110,9 @@ li {
 	min-height: 250px; 
 }
 
-.reasons-small{
-	margin-top:0;
-    
-}
 
-.reason-3{
+
+.reasons-small{
    float: left;
    width: 215px;
    height: 143px; 
@@ -137,22 +121,7 @@ li {
    background-color: rgb(238,238,238);
    
 }
-.reason-4{
-   float: left;
-   width: 265px;
-   height: 143px; 
-   padding: 47px 66px 65px 69px; 
-   text-align: center; 
-   background-color: rgb(238,238,238);
-}
-.reason-5 {
-   float: right; 
-   width: 271px;
-   height: 143px; 
-   padding: 47px 63px 65px 66px; 
-   text-align: center; 
-   background-color: rgb(238,238,238);
-}
+
 
 .int {
 	width:450px;
@@ -160,27 +129,33 @@ li {
     margin-top:20px; 
 	text-align: center; 
 	overflow: hidden;
-	padding:60px 372px 142px 378px;
+	padding:60px 0px 142px 0px;
+	margin: auto; 
+	position: relative;
+	
 	
 }
 
 .button-sedona {
 	background-color: rgb(118,99,87);
 	width: 575px;
-	height:87px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+	height:47px; 
+	text-align: center; 
+	padding-bottom: 20px;
+	padding-top: 20px; 
+   
 	
 }	
 .search {
 	width:575px;
 	height:395px; 
 	background-color: white; 
-	position:relative;
+	position:absolute;
 	margin: auto;
-	padding-bottom: 78px; 
-	display:block; 
+	left: 0; 
+    right: 0;
+	top: 100%;
+	
 }
 
 .map{
@@ -204,7 +179,7 @@ h2{
 p{
 	font-size: 14px;
 	text-transform: uppercase;
-	text-weight: regular; 
+	font-weight: normal; 
 
 }
 
@@ -258,14 +233,12 @@ legend {
 	height:218px;
 	border:none;
 }
-}
 .filter{
 	float:right;
 	border:none;
 	width:300px;
 	height:218px; 
 	
-}
 }
 .sort{
 	clear:both;
