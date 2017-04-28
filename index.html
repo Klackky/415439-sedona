@@ -5,15 +5,15 @@
     <title>HTML Academy: Седона</title>
 	<link href="css/css.css" rel="stylesheet">
   </head>
-  <body>
+ <body>
     <header class="main-header">
 	 <div class="container">
 	  <nav class="main-navigator">
-       <ul id="inline">
-	     <li class="nav-left"> <a href="#"> Информация </a> </li>
-	     <li class="nav-left"> <a href="#"> Фото и видео </a> </li>
-         <li class="nav-right"> <a href="#"> Карта штата </a> </li>
-	     <li class="nav-right-b"> <a href="#"> Гостиницы </a> </li>
+       <ul>
+	     <li class="navigation nav-left"> <a href="#"> Информация </a> </li>
+	     <li class="navigation nav-left"> <a href="#"> Фото и видео </a> </li>
+         <li class="navigation nav-right"> <a href="#"> Карта штата </a> </li>
+	     <li class="navigation nav-right-b"> <a href="#"> Гостиницы </a> </li>
 	   </ul>
 	  </nav>  
 	 </div>
@@ -62,8 +62,8 @@
         </div>			 
 		
 		    
-	<div class="reasons">
-	 <div class="bridge-text">
+	<div class="reasons-bridge">
+	 <div class="reasons-text">
 	  <h2> Там есть мост дьявола </h2>
 	  <p> -№2- </p>
 	  <p> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
@@ -75,35 +75,34 @@
 	
 	<div class="reasons-numbers">
 	 <div class="reasons-small">
-	  <h2> Небольшая площадь </h2>
+	  <h2> Небольшая <br> площадь </h2>
 	  <p> -№3- </p>
 	  <p> Все достопримечательности находятся очень близко </p>
 	 </div> 
 
-	
      <div class="reasons-small"> 	 
-	  <h2> Красивая <br> дорога </h2>
+	  <h2> Красивая<br> дорога </h2>
 	  <p> -№4- </p>
       <p> Ехать в Седону из Лас-Вегаса совсем не скучно! </p>	 
      </div>
-	
      
 	 <div class="reasons-small">
 	  <h2> Мало <br> туристов </h2>
 	  <p> -№5- </p>
 	  <p> Большинство едет в Гранд-Каньон и толпится там </p>		 
 	 </div> 
+	 <div class="clear"> </div>
 	</div> 
-	
-  <div class="int">
+  <div class="booking">
+    <div class="int">
 	 <h1> Заинтересовались? </h1>
 	 <p> Укажите ваши предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
-	</div>
-	 <div class="search">
+	</div> 
+	<div class="search">
 	   <div class="button-sedona">
 	     <a class="search-sedona" href="#"> <h2>Поиск гостиницы в Седоне </h2></a>
-	   </div>	 
-	 <form action="#" method="get">
+	   </div>	  
+	 <form class="booking-form" action="#" method="get">
 	  <div class="date">
 	    <label> Дата заезда: </label>
 	    <input type="date" name="arrival"> 
@@ -125,6 +124,7 @@
 	    <input type="submit" value="Найти"> 
 	</form>
 	</div>	 
+	</div>
 	<div class="map">  
 	<img src="img/map.png" alt="map" width="1200" height="470">
 	</div>
@@ -134,16 +134,16 @@
        #Visitsedona
      </section>
 	 <section class="social">
-	  <a class="social-btn social-btn-tw" href="#">Twitter</a>
-      <a class="social-btn social-btn-fb" href="#">Facebook</a>
-      <a class="social-btn social-btn-youtube" href="#">Youtube</a>
+	  <a class="social-btn social-btn-tw" href="#"> <img src="img/twitter.png"> </a>
+      <a class="social-btn social-btn-fb" href="#"> <img src="img/facebook.png"></a>
+      <a class="social-btn social-btn-youtube" href="#"> <img src="img/inst.png"> </a>
 	 </section> 
 	 <section class="copyright">
 	 <p class="cop-text"> website by </p>
-	 <a href="https://htmlacademy.ru/intensive/htmlcss">  <img src="img/logo-htmlacademy.png" alt="htmlacademy logo" width="120" height="51"> </a>
+	 <a class="cop-image" href="https://htmlacademy.ru/intensive/htmlcss">  <img src="img/logo-htmlacademy.png" alt="htmlacademy logo" width="116" height="47"></a>
 	 </section>
 	</div> 
 </footer>	 
  
-  </body>
+ </body>
 </html>

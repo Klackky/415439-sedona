@@ -1,8 +1,8 @@
 body {
-	font-family:"PT Sans";
+	font-family:"PT Sans", "Verdana", "sans-serif";
 	line-height: 26px;
 	background-color: white;
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0px auto;
 	
 }
@@ -14,6 +14,7 @@ body {
 	text-transform: uppercase;
 	position: relative; 
 	width: 1200px; 
+	
 }
 .container {
 	width:1200px;
@@ -35,11 +36,13 @@ header {
 
 ul {
  font-size:0px;
+
 }
 
-li {
+.navigation{
     font-size: 14px;
 	display: inline-block; 
+	
 }
 
 .nav-left{
@@ -77,26 +80,21 @@ li {
 
 .item {
 	width:33.333%;
-	min-height:182px; 
-    padding: 60px 57px 88px 60px; 
+	min-height:172px; 
+    padding: 60px 57px 70px 60px; 
     text-align: center; 
 }
-
-.reasons-text {
-	float:left; 
-	text-align: center; 
-	width: 400px;
-	min-height: 203px; 
-	background-color: rgb(129, 179, 210);
-	color: white; 
-	padding:47px 0px 0px 0px;
-	
+.reasons {
+	display: flex; 
 }
-.bridge-text{
-	float:right;
+.reasons-bridge {
+	display:flex; 
+	flex-direction: row-reverse; 
+}
+.reasons-text {
 	text-align: center; 
 	width: 400px;
-	min-height: 203px; 
+	height: 203px; 
 	background-color: rgb(129, 179, 210);
 	color: white; 
 	padding:47px 0px 0px 0px;
@@ -111,56 +109,64 @@ li {
 }
 
 
+.reasons-numbers{
+   display:flex;
+   flex-direction: row; 
+   width:100%;  
+}
 
 .reasons-small{
-   float: left;
-   width: 215px;
-   height: 143px; 
-   padding: 47px 97px 65px 88px; 
+   width: 33.333%;
+   height: 176px; 
+   padding: 20px 68px 60px 68px;  
    text-align: center; 
    background-color: rgb(238,238,238);
    
 }
 
 
-.int {
-	width:450px;
-    height:88px;
-    margin-top:20px; 
+.booking {
+    height:295px;
 	text-align: center; 
-	overflow: hidden;
-	padding:60px 0px 142px 0px;
 	margin: auto; 
-	position: relative;
+	position:relative;
+	left:0px;
+	
+}
+.booking-form{
+	width:575px; 
+	margin: auto; 
+	top: 100%; 
 	
 	
 }
-
+.int {
+	padding-top:54px;
+	padding-bottom:22px;
+	margin: 0px auto; 
+	
+}
 .button-sedona {
 	background-color: rgb(118,99,87);
 	width: 575px;
 	height:47px; 
 	text-align: center; 
 	padding-bottom: 20px;
-	padding-top: 20px; 
-   
+	padding-top: 20px;  
+	margin:auto;
+	
 	
 }	
 .search {
 	width:575px;
 	height:395px; 
 	background-color: white; 
-	position:absolute;
-	margin: auto;
+	margin:auto; 
 	left: 0; 
-    right: 0;
-	top: 100%;
-	
-}
+	right: 0;
+	position:absolute; 
 
-.map{
-	position: relative; 
-	
+}
 	
 }
 
@@ -201,25 +207,35 @@ legend {
 	padding-top:18px; 
 	position:relative; 
 	overflow: hidden; 
+	display:flex;
+}
+.hashtag {
+	width:33.333%; 
+	font-size:21px; 
+	line-height: 26px; 
+	text-transform:uppercase; 
+	font-weight: bold; 
+	margin:auto;
+	padding-left: 125px; 
+
 }
 
-.hashtag{
-	float:left;
-	width:136px;
-	margin-left: 132px;
-	margin-right: 255px;
-	min-height:34px;
+.cop-text {
+	width:100px; 
+	vertical-align:middle; 
 }
-.social{
-	margin-right:212px;
-	min-height:34px;
-	float:left;
-	width:156px; 
-}
+
 .copyright{
-	width:113px;
-	margin: 0 auto;
+	width:33.333%;
+	padding-left:120px; 
+	display:flex; 
 }
+.social {
+	width:33.333%;
+	padding-left:117px; 
+	 
+}
+
 
 .search-inf{
 	float: left;
@@ -243,5 +259,12 @@ legend {
 .sort{
 	clear:both;
 	border:none;
+	width: 1200px;
+	
+}
+.results {
+	display: flex; 
+	
+	
 }
 
