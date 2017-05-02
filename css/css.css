@@ -4,6 +4,7 @@ body {
 	background-color: white;
 	max-width: 1200px;
 	margin: 0px auto;
+	padding:0;
 	
 }
 
@@ -13,15 +14,17 @@ body {
 	font-weight: bold; 
 	text-transform: uppercase;
 	position: relative; 
-	width: 1200px; 
+	width: 1054px; 
+	padding-left:73px;
+	padding-right:73px;
 	
 }
 .container {
 	width:1200px;
-	min-height: 58px;
-	display: flex;
-    justify-content: center; 
+	height: 41px;
     align-items: center; 
+	padding-top:17px; 
+	
 }
 header { 
     margin:0;
@@ -30,35 +33,37 @@ header {
 .logo {
     position: absolute;
 	top:0px;
-	left:520px; 
-	right:520px; 
+	left:530px;
 }
+.nav{
+	display: flex;
+	padding:0;
+	text-align:center; 
+	justify-content: space-between;
+	margin:0;
 
-ul {
- font-size:0px;
-
+;
 }
-
 .navigation{
-    font-size: 14px;
-	display: inline-block; 
-	
+    font-size: 14px; 
+	margin:0; 
+	padding:0;
+	list-style-type:none;
 }
 
 .nav-left{
-	width: 240px;
 	padding:0;
 
 }
 
-.nav-right{
-	margin-left:320px; 
-	width: 240px;
+.nav-right{ 
+  margin-left:300px;
 
 }
 
 .nav-right-b{
 	padding:0;
+	
 
 }
 .main-image{
@@ -167,13 +172,23 @@ ul {
 	position:absolute; 
 
 }
+
+.howtosort{
+	display:flex;
+	justify-content:space-between;
+	margin:0px;
+}
 	
+.sort1 {
+	list-style-type:none;
+	padding-left:10px;
 }
 
-h1{
+.headertext{
 	font-size:30px;
 	line-height: 24px;
 	text-transform: uppercase;
+	
 }
 
 h2{
@@ -181,11 +196,14 @@ h2{
 	font-weight: bold; 
 	text-transform: uppercase; 
 	line-height:21px; 
+	margin:0px;
+	
 }
-p{
+.text{
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: normal; 
+	
 
 }
 
@@ -194,13 +212,21 @@ legend {
 	font-weight: bold; 
 	text-transform: uppercase; 
 	line-height: 21px;
+	padding-bottom:7px;
 	
 }
-
+.sort{
+	display:flex;
+}
 .sort1 {
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase; 
+}
+.container2 {
+	width:100%;
+	display:flex; 
+	
 }
 .main-footer{
 	padding-bottom:18px;
@@ -233,38 +259,169 @@ legend {
 .social {
 	width:33.333%;
 	padding-left:117px; 
-	 
+
 }
 
-
+.all-search{
+	border:none; 
+	display:flex; 
+	height:193px; 
+	background-image:url(../img/filter-background.png);
+	padding-top:27px;
+	padding-left:68px;
+	color:white;
+}
 .search-inf{
-	float: left;
-	width: 313px;
-	height: 218px; 
-	border:none;
+	width:240px;
+	border:none; 
+	padding:0px; 
 }
-.search-2{
-	float:left;
-	width:487px;
-	height:218px;
-	border:none;
+.search-accomodation{
+	width:288px;
+	border:none; 
+	padding:0px;
 }
-.filter{
-	float:right;
-	border:none;
-	width:300px;
-	height:218px; 
-	
+.filter {
+	width:327px; 
+	border:none; 
+	margin-left:240px; 
+	padding:0;
 }
 .sort{
-	clear:both;
 	border:none;
-	width: 1200px;
+	width: 1054px;
+	height:55px;
+	margin-left:73px;
+	padding-top:30px;
+	padding-right:73px;
 	
 }
 .results {
 	display: flex; 
-	
-	
+	flex-direction:column;	
+}
+.updown{
+	margin-left: auto; 
+}
+.hotel { 
+    display:flex;
+	width:1200px;
+	justify-content:space-between; 
+}
+.motel{
+	display:flex;
+}
+.apartments {
+	display:flex; 
+}
+.rating {
+	margin-left:auto; 
+	margin-right:70px;
+	padding-top:18px;
+}
+.image-block{
+	width:135px;
+	height:90px;
+	margin-left:73px; 
+	margin-top:18px;
+
+}
+.text-block{
+	width:362px; 
+	height:135px;
+	margin-left:30px; 
+	padding-top:18px;
+}
+.filer-range{
+	width:330px;
+}
+.price-controls{
+	height:36px;
+	margin-bottom:20px;
+	border:2px solid #ffffff; 
+	border-radius:2px; 
+	font-size: 0;
+	position: relative;
+
+}
+.price-controls label{
+	display:inline-block;
+	font-size:14px; 
+	line-height:38px;
+	vertical-align:top;
+	cursor:pointer; 
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+}
+.range-toggle-min {
+  left: 0;
 }
 
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
