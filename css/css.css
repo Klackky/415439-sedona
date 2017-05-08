@@ -68,8 +68,17 @@ header {
   margin-left:215px;
 
 }
+.item {
+	width:33.333%;
+	height:124px; 
+    padding: 60px 57px 70px 60px; 
+    text-align: center; 
+}
 .item-img{
-	padding-bottom:29px;
+	padding-bottom:23px;
+}
+.item-name{
+	padding-bottom:10px;
 }
 .nav-right-b{
 	padding:0;
@@ -77,15 +86,22 @@ header {
 
 }
 .main-image{
-	width: 100%;
+	width:100%;
 }
 .about {
 	text-align:center;
 	margin-top:50px;
-	margin-bottom:55px; 
+	margin-bottom:58px; 
+	height:94px;
 
 }
-
+.text.about{
+	margin-top:32px;
+	
+}
+.main-sedona{
+	line-height:26px;
+}
 .features {
 	display:flex; 
     flex-direction: row; 
@@ -95,12 +111,7 @@ header {
 }
 
 
-.item {
-	width:33.333%;
-	height:172px; 
-    padding: 60px 57px 70px 60px; 
-    text-align: center; 
-}
+
 .reasons {
 	display: flex; 
 }
@@ -111,10 +122,10 @@ header {
 .reasons-text {
 	text-align: center; 
 	width: 400px;
-	height: 209px; 
+	height: 210px; 
 	background-color: rgb(129, 179, 210);
 	color: white; 
-	padding:47px 0px 0px 0px;
+	padding:47px 48px 0px 47px;
 	
 }
 .bridge-img {
@@ -125,7 +136,11 @@ header {
 	height: 250px; 
 }
 
-
+.text.number{
+	margin-top:28px;
+	margin-bottom:23px;
+	
+}
 .reasons-numbers{
    display:flex;
    flex-direction: row; 
@@ -145,9 +160,7 @@ a:link{
 	text-decoration:none;
 	color:black;
 }
-a:visited{
-	
-}
+
 
 .booking {
     height:295px;
@@ -176,11 +189,9 @@ a:visited{
 }
 
 
-
-
 .int {
-	padding-top:54px;
-	padding-bottom:22px;
+	padding-top:40px;
+	padding-bottom:40px;
 	margin: 0px auto; 
 	
 }
@@ -227,7 +238,14 @@ a:visited{
 	position:absolute;
 	right:10px;
 	top:8px;
+	outline:none;
 	
+}
+.datepicker:hover{
+	background-image:url(../img/calendar-black.png);
+}
+.datepicker:focus{
+	background-image:url(../img/calendar-blue.png);
 }
 input[name="departure"],
     [name="arrival"]  {
@@ -276,7 +294,7 @@ input[name="kids"],
 input:focus{
 	background-color:#ffffff;
 }
-input:active{
+input:hover{
 	background-color:#ebebeb;
 }
 input[name="adults"]{
@@ -285,7 +303,7 @@ input[name="adults"]{
 input[name="kids"]{
 	margin-left:27px;
 }
-input[type=submit]:active{
+input[type=submit]:hover{
 	background-color:#669ec0;
 }
 input[type=submit]:focus{
@@ -303,18 +321,32 @@ input[type=submit]:focus{
 	position:absolute;
 	right:15px;
 	top:13px;
+	outline:none;
 }
-.plus:active{
+.plus:hover{
 	background-image:url(../img/black-plus.png);
 }
 .plus:focus{
 	background-image:url(../img/blue-plus.png);
 }
-.minus:active{
+.minus:hover{
 	background-image:url(../img/black-minus.png);
 }
 .minus:focus{
 	background-image:url(../img/blue-minus.png);
+}
+
+.plus1:hover{
+	background-image:url(../img/black-plus.png);
+}
+.plus1:focus{
+	background-image:url(../img/blue-plus.png);
+}
+.minus1:hover{
+	background-image:url(../img/black-minus.png);
+}
+.minus1:focus{
+	
 }
 .kd-container{
 	width:192px;
@@ -339,6 +371,7 @@ input[type=submit]:focus{
 	position:absolute;
 	left:125px;
 	top:15px;
+	outline:none;
 
 }
 .minus1{
@@ -352,6 +385,7 @@ input[type=submit]:focus{
 	position:absolute;
 	left:84px;
 	top:15px;
+	outline:none;
 }
 .plus1{
 	border:none;
@@ -364,7 +398,9 @@ input[type=submit]:focus{
 	position:absolute;
 	right:15px;
 	top:13px;
+	outline:none;
 }
+
 .ad-container{
 	width:233px;
 	margin:0;
@@ -397,6 +433,7 @@ label{
 	font-size:30px;
 	line-height: 24px;
 	text-transform: uppercase;
+	padding-bottom:4px;
 	
 }
 .search-sedona2{
@@ -407,7 +444,7 @@ h2{
 	font-size: 21px;
 	font-weight: bold; 
 	text-transform: uppercase; 
-	line-height:26px; 
+	line-height:21px; 
 	margin:0px;
 	
 }
@@ -415,6 +452,7 @@ h2{
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: normal; 
+	line-height:21px;
 	
 
 }
@@ -459,8 +497,29 @@ legend {
 }
 
 .cop-text {
-	width:100px; 
+	width:80px; 
 	vertical-align:middle; 
+	font-size:14px;
+	line-height:26px;
+	text-transform:uppercase;
+	
+}
+.cop-image{
+	background-image:url(../img/logo-htmlacademy.png);
+	background-repeat:no-repeat;
+	display:block;
+	width:116px;
+	height:47px;
+	font-size:0;
+	margin-top:auto;
+
+}
+.cop-image:hover{
+	background-image:url(../img/logo-blue.png);
+	background-repeat:no-repeat;
+}
+.cop-image:focus{
+	background-image:url(../img/logo-grey.png);
 }
 
 .copyright{
@@ -471,9 +530,54 @@ legend {
 .social {
 	width:33.333%;
 	padding-left:117px; 
+	display:block;
+	
 
 }
-
+.social-btn{
+	width: 46px;
+    height: 48px;
+	background-color: #81b3d2;
+	background-repeat:no-repeat;
+	display:inline-block;
+	font-size:0;
+}
+.social-btn-tw{
+	background-image:url(../img/t.png);
+	margin:auto;
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+.social-btn:hover{
+	background-color:#669ec0;
+}
+.social-btn:focus{
+	background-color:#5496bd;
+}
+.social-btn:focus span{
+	opacity: 0.3;
+}
+.social-btn-fb{
+	background-image:url(../img/f.png);
+	margin-left:3px;
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+.social-btn-fb:focus{
+	background-image:url(../img/fo.png);
+}
+.social-btn-tw:focus{
+	background-image:url(../img/to.png);
+}
+.social-btn-youtube{
+	background-image:url(../img/y.png);
+	margin-left:3px;
+	background-repeat:no-repeat;
+	background-position: center; 
+}
+.social-btn-youtube:focus{
+	background-image:url(../img/yo.png);
+}
 .all-search{
 	border:none; 
 	display:flex; 
