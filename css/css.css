@@ -484,7 +484,6 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: normal;
-    line-height: 30px;
 }
 legend {
     font-size: 16px;
@@ -730,13 +729,12 @@ input[type="checkbox"]:not(checked) + label:before {
     margin-top: 6px;
 }
 .image-block {
-    width: 135px;
+    min-width: 135px;
     height: 90px;
     margin-left: 73px;
     margin-top: 18px;
 }
 .text-block {
-    width: 362px;
     height: 135px;
     margin-left: 30px;
     padding-top: 19px;
