@@ -56,7 +56,7 @@ a {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: 'pt sans';
+    font-family: 'pt sans', Verdana, sans-serif;
 }
 .nav-left {
     padding: 0;
@@ -93,12 +93,25 @@ a {
     margin-bottom: 58px;
     height: 96px;
 }
+.blue-heading{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.text.blue{
+  padding-left:7px;
+}
 .text.about {
     margin-top: 32px;
+}
+.heading-grey{
+  margin-left:60px;
+  margin-right:60px;
 }
 .main-sedona {
     line-height: 26px;
     margin-left: 5px;
+    padding-left: 371px;
+    padding-right: 373px;
 }
 .features {
     display: flex;
@@ -160,7 +173,7 @@ a:link {
     height: 282px;
     margin: auto;
     top: 100%;
-    margin-top: 51px;
+    margin-top: 55px;
     margin-bottom: 60px;
     padding-left: 57px;
     padding-right: 56px;
@@ -177,10 +190,10 @@ a:link {
 .button-sedona {
     background-color: rgb(118, 99, 87);
     margin: auto;
-    height: 86px;
+    height: 82px;
 }
 .search {
-    width: 575px;
+    width: 570px;
     background-color: white;
     margin: auto;
     left: 0;
@@ -194,7 +207,7 @@ a:link {
     font-size: 21px;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 86px;
+    line-height: 82px;
 }
 .howtosort {
     display: flex;
@@ -205,25 +218,25 @@ a:link {
 .title {
     font: 12px;
     text-transform: uppercase;
-    text-decoration: underline;
     display: inline-block;
+	vertical-align:middle;
 }
 .howtosort a.activelink {
     border-bottom: none;
     color: #81b3d2;
 }
 .howtosort a.notactive {
-    border-bottom: dotted;
+    border-bottom:1px dotted;
     color: #b6b6b6;
     padding: 0px;
 }
-.howtosort a.notactive:focus {
+.howtosort a.notactive:active {
     border-bottom: none;
     color: black;
     padding: 0px;
 }
 .howtosort a.notactive:hover {
-    border-bottom: dotted;
+    border-bottom:1px dotted;
     color: #81b3d2;
     padding: 0px;
 }
@@ -242,7 +255,7 @@ a:link {
     background-repeat: no-repeat;
     border: none;
     position: absolute;
-    right: 70px;
+    right: 62px;
     top: 148px;
     outline: none;
 }
@@ -256,20 +269,20 @@ a:link {
     background-repeat: no-repeat;
     border: none;
     position: absolute;
-    right: 70px;
+    right: 62px;
     top: 213px;
     outline: none;
 }
 .datepicker1:hover {
     background-image: url(../img/calendar-black.png);
 }
-.datepicker1:focus {
+.datepicker1:active {
     background-image: url(../img/calendar-blue.png);
 }
 .datepicker:hover {
     background-image: url(../img/calendar-black.png);
 }
-.datepicker:focus {
+.datepicker:active {
     background-image: url(../img/calendar-blue.png);
 }
 input[name="departure"],
@@ -278,12 +291,12 @@ input[name="departure"],
     height: 39px;
     padding-right: 43px;
     padding-left: 10px;
-    margin: 0;
+    margin-right: 5px;
     background-color: #f2f2f2;
     border: none;
     font-size: 14px;
     line-height: 26px;
-    font-family: 'pt sans';
+    font-family: 'pt sans', Verdana, sans-serif;
 }
 input[name="departure"] {
     margin-left: 20px;
@@ -304,11 +317,12 @@ input[type="submit"] {
     background-color: #81b3d2;
     color: white;
     border: none;
-    margin-top: 50px;
+    margin-top: 55px;
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 26px;
+    margin-right: 13px;
 }
 input[name="kids"],
 [name="adults"] {
@@ -321,7 +335,7 @@ input[name="kids"],
     font-weight: bold;
     text-align: center;
 }
-input:focus {
+input:active {
     background-color: #ffffff;
 }
 input:hover {
@@ -333,7 +347,7 @@ input[name="adults"] {
 input[name="kids"] {} input[type=submit]:hover {
     background-color: #669ec0;
 }
-input[type=submit]:focus {
+input[type=submit]:active {
     background-color: #5496bd;
     color: #88b6d1;
 }
@@ -351,25 +365,25 @@ input[type=submit]:focus {
 .plus:hover {
     background-image: url(../img/black-plus.png);
 }
-.plus:focus {
+.plus:active {
     background-image: url(../img/blue-plus.png);
 }
 .minus:hover {
     background-image: url(../img/black-minus.png);
 }
-.minus:focus {
+.minus:active {
     background-image: url(../img/blue-minus.png);
 }
 .plus1:hover {
     background-image: url(../img/black-plus.png);
 }
-.plus1:focus {
+.plus1:active {
     background-image: url(../img/blue-plus.png);
 }
 .minus1:hover {
     background-image: url(../img/black-minus.png);
 }
-.minus1:focus {} .ad-container {
+.minus1:active {} .ad-container {
     height: 44px;
     margin: 0;
 }
@@ -390,17 +404,18 @@ input[type=submit]:focus {
 }
 .adults-number,
 .kids-number {
-    width: 120px;
+    width: 114px;
     display: flex;
     height: 34px;
 }
 .adults-number {
-    margin-left: 42px;
-    margin-top: 3px;
+    margin-left: 43px;
+    margin-right:5px;
 }
 .kids-number {
-    margin-left: 23px;
-    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 2px;
+
 }
 .minus {
     border: none;
@@ -447,7 +462,7 @@ input[type=submit]:focus {
 .container-dates {
     width: 463px;
     height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     margin-left: 1px;
 }
 label {
@@ -467,7 +482,7 @@ label {
 .search-sedona2 {
     margin-top: 10px;
 }
-h2 {
+h2{
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
@@ -482,6 +497,8 @@ h2 {
 }
 .text1 {
     font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 8px;
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -491,6 +508,7 @@ legend {
     text-transform: uppercase;
     line-height: 21px;
     padding-bottom: 7px;
+    font-family: 'pt sans', Verdana, sans-serif;
 }
 .form-label {
     font-weight: normal;
@@ -519,7 +537,7 @@ legend {
     line-height: 26px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 12px;
     padding-left: 130px;
 }
 .cop-text {
@@ -542,13 +560,15 @@ legend {
     background-image: url(../img/logo-blue.png);
     background-repeat: no-repeat;
 }
-.cop-image:focus {
+.cop-image:active {
     background-image: url(../img/logo-grey.png);
 }
 .copyright {
     width: 33.333%;
     padding-left: 90px;
     display: flex;
+	align-items:center; 
+	
 }
 .social {
     width: 33.333%;
@@ -562,6 +582,7 @@ legend {
     background-color: #81b3d2;
     background-repeat: no-repeat;
     display: inline-block;
+	vertical-align:middle;
     font-size: 0;
 }
 .social-btn-tw {
@@ -573,10 +594,10 @@ legend {
 .social-btn:hover {
     background-color: #669ec0;
 }
-.social-btn:focus {
+.social-btn:active {
     background-color: #5496bd;
 }
-.social-btn:focus span {
+.social-btn:active span {
     opacity: 0.3;
 }
 .social-btn-fb {
@@ -585,10 +606,10 @@ legend {
     background-repeat: no-repeat;
     background-position: center;
 }
-.social-btn-fb:focus {
+.social-btn-fb:active {
     background-image: url(../img/fo.png);
 }
-.social-btn-tw:focus {
+.social-btn-tw:active {
     background-image: url(../img/to.png);
 }
 .social-btn-youtube {
@@ -597,7 +618,7 @@ legend {
     background-repeat: no-repeat;
     background-position: center;
 }
-.social-btn-youtube:focus {
+.social-btn-youtube:active {
     background-image: url(../img/yo.png);
 }
 .all-search {
@@ -605,6 +626,7 @@ legend {
     display: flex;
     height: 190px;
     background-image: url(../img/filter-background.jpg);
+	background-color:#7b9ec0;
     padding-top: 26px;
     padding-left: 68px;
     color: white;
@@ -621,7 +643,7 @@ legend {
     margin-left: 25px;
 }
 .filter {
-    width: 327px;
+    width: 317px;
     border: none;
     margin-left: 195px;
     padding: 0;
@@ -671,7 +693,7 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .container-results {
     padding-right: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
 }
 .updown {
     margin-left: auto;
@@ -680,8 +702,8 @@ input[type="checkbox"]:not(checked) + label:before {
     display: flex;
     height: 93px;
     width: 1200px;
-    padding-bottom: 45px;
-    padding-top: 10px;
+    padding-bottom: 46px;
+    padding-top: 8px;
     border-bottom: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5;
 }
@@ -691,29 +713,38 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .rait {
     background-color: #f2f2f2;
-    width: 111px;
-    line-height: 29px;
+    height: 27px;
+    font-size: 14px;
+    text-transform: uppercase;
     text-align: center;
     display: block;
-    margin-right: 73px;
-    margin-top: 40px;
+    margin-top: 42px;
 }
 .stars {
     margin-left: 20px;
     margin-top: 20px;
 }
 .stars2 {
-    padding-top: 18px;
+    padding-top: 22px;
     margin-left: 45px;
 }
 .stars3 {
-    padding-top: 18px;
-    margin-left: 70px;
+    padding-top: 25px;
+    margin-left: 68px;
+}
+.hotel-name{
+  line-height:26px;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px;
 }
 .price,
 .price1,
 .price2 {
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
 }
 .price {
     margin-left: 35px;
@@ -732,19 +763,20 @@ input[type="checkbox"]:not(checked) + label:before {
     min-width: 135px;
     height: 90px;
     margin-left: 73px;
-    margin-top: 18px;
+    margin-top: 25px;
 }
 .text-block {
     height: 135px;
     margin-left: 30px;
-    padding-top: 19px;
+	padding-top:22px;
+    
 }
 .filer-range {
     width: 330px;
 }
 .price-controls {
-    height: 30px;
-    margin-bottom: 20px;
+    height: 33px;
+    margin-bottom: 22px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     font-size: 0;
@@ -752,18 +784,20 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .price-controls label {
     display: inline-block;
+	vertical-align:middle;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 21px;
     vertical-align: top;
     cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
-    padding-left: 59px;
-    margin: auto;
+    padding-left: 60px;
+    line-height: 21px;
     font-size: 14px;
     font-weight: normal;
+
 }
 .price-controls input {
     width: 50px;
@@ -785,7 +819,7 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .range-controls {
     position: relative;
-    margin-bottom: 37px;
+    margin-bottom: 32px;
 }
 .range-controls .scale {
     height: 2px;
@@ -826,11 +860,12 @@ input[type="checkbox"]:not(checked) + label:before {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
+	
 }
 .button-more:hover {
     background-color: #669ec1;
 }
-.button-more:focus {
+.button-more:active {
     background-color: #5596be;
     color: #97b8cb;
 }
@@ -845,11 +880,12 @@ input[type="checkbox"]:not(checked) + label:before {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
+	
 }
 .button-booking:hover {
     background-color: #604e44;
 }
-.button-booking:focus {
+.button-booking:active {
     background-color: #503e34;
     color: #8d8980;
 }
@@ -859,6 +895,7 @@ input[type="checkbox"]:not(checked) + label:before {
 .down {
     background: url('../img/down.png');
     display: inline-block;
+	vertical-align:middle;
     font-size: 0px;
     height: 10px;
     width: 10px;
@@ -868,22 +905,24 @@ input[type="checkbox"]:not(checked) + label:before {
 .up {
     background: url('../img/up.png');
     display: inline-block;
+	vertical-align:middle;
     font-size: 0px;
     height: 10px;
     width: 10px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 8px;
 }
 .down:hover {
     background: url('../img/blackdown.png');
 }
-.down:focus {
+.down:active {
     background: url('../img/down.png');
 }
 .up:hover {
     background: url('../img/blackup.png');
 }
-.up:focus {
+.up:active {
     background: url('../img/upblue.png');
 }
 .btn-transparent {
@@ -892,6 +931,7 @@ input[type="checkbox"]:not(checked) + label:before {
     padding: 6px 35px;
     font-size: 14px;
     line-height: 21px;
+    font-family: 'pt sans', Verdana, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: normal;
@@ -899,7 +939,7 @@ input[type="checkbox"]:not(checked) + label:before {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
-    width: 135px;
+    width: 137px;
 }
 .btn-transparent:hover {
     color: #000000;
