@@ -573,8 +573,8 @@ legend {
     width: 310px;
     padding-left: 90px;
     display: flex;
-	align-items:center; 
-	
+	align-items:center;
+
 }
 .social {
     width: 300px;
@@ -719,9 +719,11 @@ input[type="checkbox"]:not(checked) + label:before {
 .rait {
     background-color: #f2f2f2;
     height: 23px;
-	padding-top:4px;
+	  padding-top:4px;
     font-size: 14px;
-	line-height:21px;
+	  line-height:21px;
+    height: 27px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -765,7 +767,7 @@ input[type="checkbox"]:not(checked) + label:before {
 .description {
     margin-bottom: 13px;
 	margin-top:2px;
-    
+
 }
 .image-block {
     min-width: 135px;
@@ -776,8 +778,10 @@ input[type="checkbox"]:not(checked) + label:before {
 .text-block {
     height: 135px;
     margin-left: 30px;
-	padding-top:19px;
-    
+	  padding-top:19px;
+	 padding-top:22px;
+
+
 }
 .filer-range {
     width: 330px;
@@ -792,7 +796,7 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .price-controls label {
     display: inline-block;
-	vertical-align:middle;
+	  vertical-align:middle;
     font-size: 14px;
     line-height: 21px;
     vertical-align: top;
@@ -868,7 +872,7 @@ input[type="checkbox"]:not(checked) + label:before {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-	margin-left:-2px;
+	  margin-left:-2px;
 }
 .button-more:hover {
     background-color: #669ec1;
@@ -888,7 +892,7 @@ input[type="checkbox"]:not(checked) + label:before {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-	
+
 }
 .button-booking:hover {
     background-color: #604e44;
@@ -903,7 +907,7 @@ input[type="checkbox"]:not(checked) + label:before {
 .down {
     background: url('../img/down.png');
     display: inline-block;
-	vertical-align:middle;
+	  vertical-align:middle;
     font-size: 0px;
     height: 10px;
     width: 10px;
@@ -913,7 +917,7 @@ input[type="checkbox"]:not(checked) + label:before {
 .up {
     background: url('../img/up.png');
     display: inline-block;
-	vertical-align:middle;
+	  vertical-align:middle;
     font-size: 0px;
     height: 10px;
     width: 10px;
