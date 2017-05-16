@@ -22,6 +22,31 @@ body {
     padding-right: 73px;
     margin-left: 15px;
 }
+.main-navigator a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.main-navigator a:hover {
+    color: #81b3d2;
+}
+
+.main-navigator a:active {
+    color: #c1c1c1;
+}
+
+.main-navigator .current {
+    color: #766357;
+}
+
+.main-navigator .current:hover {
+    color: #604e43;
+}
+
+.main-navigator .current:active {
+    color: #d6d0cc;
+}
 .container {
     width: 1200px;
     height: 41px;
@@ -162,7 +187,7 @@ a:link {
     text-decoration: none;
 }
 .booking {
-    height: 295px;
+    height: 290px;
     text-align: center;
     margin: auto;
     position: relative;
@@ -184,13 +209,16 @@ a:link {
 }
 .int {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
     margin: 0px auto;
 }
 .button-sedona {
     background-color: rgb(118, 99, 87);
     margin: auto;
-    height: 82px;
+    height: 85px;
+}
+.map{
+  padding-bottom:6px;
 }
 .search {
     width: 570px;
@@ -219,14 +247,14 @@ a:link {
     font: 12px;
     text-transform: uppercase;
     display: inline-block;
-	vertical-align:middle;
+	  vertical-align:middle;
 }
 .howtosort a.activelink {
     border-bottom: none;
     color: #81b3d2;
 }
 .howtosort a.notactive {
-    border-bottom:1px dotted;
+    border-bottom:1px dotted #81b3d2;
     color: #b6b6b6;
     padding: 0px;
 }
@@ -631,10 +659,13 @@ legend {
     display: flex;
     height: 190px;
     background-image: url(../img/filter-background.jpg);
-	background-color:#7b9ec0;
+	  background-color:#7b9ec0;
     padding-top: 26px;
     padding-left: 68px;
     color: white;
+}
+.main-form{
+  display:flex;
 }
 .search-inf {
     width: 230px;
@@ -695,10 +726,11 @@ input[type="checkbox"]:not(checked) + label:before {
 .results {
     display: flex;
     flex-direction: column;
+    margin-top:-3px;
 }
 .container-results {
     padding-right: 70px;
-    padding-bottom: 23px;
+    padding-bottom: 28px;
 }
 .updown {
     margin-left: auto;
@@ -713,7 +745,7 @@ input[type="checkbox"]:not(checked) + label:before {
     border-top: 1px solid #e5e5e5;
 }
 .rating {
-    margin-left: 523px;
+    margin-left: 526px;
     margin-right: 73px;
 }
 .rait {
@@ -741,12 +773,19 @@ input[type="checkbox"]:not(checked) + label:before {
     padding-top: 25px;
     margin-left: 68px;
 }
-.hotel-name{
+.hotel-name {
   line-height:26px;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0px;
+  cursor: pointer;
+}
+.hotel-name:active{
+  color:#b2b2b2;
+}
+.hotel-name:hover{
+  color:#81b3d2;
 }
 .price,
 .price1,
@@ -766,7 +805,7 @@ input[type="checkbox"]:not(checked) + label:before {
 }
 .description {
     margin-bottom: 13px;
-	margin-top:2px;
+	  margin-top:2px;
 
 }
 .image-block {
